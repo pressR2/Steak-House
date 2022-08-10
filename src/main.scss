@@ -1,0 +1,560 @@
+/*colors*/
+$white: #fff;
+$black: #000;
+$orange: #fb6000;
+$orange-dark: #e96514;
+$red: #920303;
+$red-dark: #7e0101;
+
+/*line-height*/
+$line-height-small: 1.09vh;
+$line-height-mid: 2.5vh;
+$line-height-big: 3.1vh;
+
+/*font*/
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-style: normal;
+
+$flex-column: column;
+$full-width: 100%;
+$border-radius-desk: 0.52vw;
+$border-radius-mob: 0.625rem;
+$no-padding: 0;
+$text-decoration: underline;
+$site-padding: max((100vw - 150vh)/2, 0px);
+
+@mixin primaryBtn {
+    width: 10.63vw;
+    height: 4.5vh;
+    background: $red;
+    border-radius: $border-radius-desk;
+    border: none;
+    color: $white;
+    font-size: max(0.75vw, 0.8rem);
+}
+
+@mixin primaryBtnSml {
+    @include primaryBtn();
+    width: unset;
+    box-sizing: border-box;
+    border-radius: $border-radius-mob;
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexItemCenter() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin backgroundSetup {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin textStyle {
+    font-style: $font-style;
+    font-weight: $font-weight-normal;
+    font-size: max(1.04vw, 0.8rem);
+    line-height: $line-height-big;
+    color: $white;
+}
+
+@mixin linkStyle {
+    text-decoration: none;
+    color: $black;
+    font-size: max(0.73vw, 0.8rem);
+}
+
+@mixin iconSize {
+    height: 4vh;
+    margin-bottom: 1.45vh;
+    margin-left: 0.25vh;
+}
+
+@mixin iconSizeSml {
+    width: auto;
+    min-height: 50px;
+    padding: 0.5vw;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    position: relative;
+    font-family: sofia-pro, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.app-wrapper {
+    width: $full-width;
+    display: flex;
+    flex-direction: $flex-column;
+}
+
+/*navigation*/
+.nav-menu {
+    @include flexCenter(row);
+    flex: 1 1 6.33vh;
+    box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.0520088);
+    .logo-with-links {
+        @include flexItemCenter();
+        min-width: 50%;
+        .links {
+            @include flexItemCenter();
+            a {
+                @include linkStyle();
+                height: $line-height-mid;
+                font-style: $font-style;
+                font-weight: $font-weight-normal;
+                line-height: $line-height-mid;
+                padding-left: 0.83vw;
+                padding-right: 0.95vw;
+                &:hover {
+                    background-color: $orange;
+                    color: $white;
+                    border-radius: $border-radius-desk;
+                }
+                &:active {
+                    background-color: $orange-dark;
+                }
+            }
+        }
+    }
+    .links-with-icons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        a {
+            @include linkStyle();
+            @include flexCenter(column);
+            margin-left: 1.08vw;
+            padding-top: 0.37vw;
+            padding-bottom: 0.37vw;
+            text-align: center;
+            span {
+                line-height: $line-height-mid;
+            }
+        }
+        .order-btn {
+            @include flexCenter(column);
+            width: 5rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            border-radius: $border-radius-desk;
+            background-color: $red;
+            &:hover {
+                text-decoration: $text-decoration;
+                color: $white;
+            }
+            &:active {
+                background-color: $red-dark;
+            }
+            span {
+                color: $white;
+                line-height: $line-height-small;
+            }
+        }
+    }
+}
+
+/*logotypes*/
+.logo-types-container {
+    display: flex;
+    .logo-types-list {
+        @include flexItemCenter();
+        justify-content: space-evenly;
+        width: $full-width;
+        padding: $no-padding;
+        box-sizing: border-box;
+        a {
+            span {
+                &:hover {
+                    transform: scale(1.05);
+                }
+                &:active {
+                    transform: scale(1.08);
+                }
+            }
+        }
+    }
+}
+
+/*adbox*/
+.flex-adbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: $full-width;
+    margin-bottom: 1.2%;
+    margin-right: auto;
+    .adBox-container-left {
+        background: url("./assets/dana-devolk-x2cNcfz_xXU-unsplash.png");
+        @include backgroundSetup();
+        border-radius: $border-radius-desk;
+        .adBox-content-left {
+            padding-left: 13%;
+            padding-top: 4.2%;
+            margin-bottom: 1.8vh;
+            h2 {
+                height: $line-height-mid;
+                font-style: $font-style;
+                font-weight: $font-weight-bold;
+                font-size: max(1.82vw, 0.8rem);
+                line-height: $line-height-mid;
+                color: $white;
+            }
+            p {
+                height: 7.7vh;
+                @include textStyle();
+                &::after {
+                    background-color: $black;
+                    content: "39 zł";
+                }
+            }
+            button {
+                margin-top: 1vh;
+                &:hover {
+                    text-decoration: $text-decoration;
+                }
+                &:active {
+                    background-color: $red-dark;
+                }
+            }
+        }
+    }
+    .adBox-container-right {
+        background: url("./assets/aplikacja.png");
+        @include backgroundSetup();
+        border-radius: $border-radius-desk;
+        .adBox-content-right {
+            padding-left: 13%;
+            padding-top: 4.2%;
+            h2 {
+                height: $line-height-mid;
+                font-style: $font-style;
+                font-weight: $font-weight-bold;
+                font-size: max(1.82vw, 0.8rem);
+                line-height: $line-height-mid;
+                color: $white;
+            }
+            p {
+                height: 5vh;
+                @include textStyle();
+                span {
+                    background-color: $red;
+                }
+            }
+            .icons-wrapper {
+                @include flexItemCenter();
+                justify-content: space-between;
+                width: 5.2vw;
+            }
+            button {
+                &:hover {
+                    text-decoration: $text-decoration;
+                }
+                &:active {
+                    background-color: $red-dark;
+                }
+            }
+        }
+    }
+}
+
+/*main*/
+.flex-main {
+    width: $full-width;
+}
+
+.swiper-slide {
+    @include flexCenter(column);
+    text-align: center;
+    font-style: $font-style;
+    font-weight: $font-weight-bold;
+
+    p {
+        overflow-wrap: break-word;
+        text-align: left;
+    }
+    span {
+        background-color: $black;
+        color: $white;
+        font-style: $font-style;
+        font-weight: $font-weight-bold;
+    }
+}
+
+.page-image {
+    background: url("./assets/Bitmapv.png");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+    .logo-types-list {
+        width: 200px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-left: 1rem;
+        justify-content: flex-start;
+    }
+
+    .logo-types-list a span {
+        padding-left: 0.94rem;
+        padding-right: 0.94rem;
+    }
+}
+
+@media only screen and (max-width: 1021px) {
+    .page-mobile-image {
+        width: 100vw;
+    }
+
+    .page-mobile-image img {
+        width: 100%;
+    }
+
+    .flex-main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 0;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .swiper {
+        width: 100vw;
+        p {
+            overflow-wrap: break-word;
+            text-align: left;
+            box-sizing: border-box;
+            width: 95%;
+            padding: 0 1%;
+        }
+    }
+
+    .swiper-pagination {
+        margin-top: 1.3rem;
+        text-align: unset;
+    }
+
+    .swiper-slide {
+        font-size: 1rem;
+        line-height: 2.02rem;
+        button {
+            @include primaryBtnSml();
+            margin: 1.56vh auto 5% 5%;
+        }
+    }
+
+    .nav-menu .links-with-icons a {
+        font-size: max(0.73vw, 0.8rem);
+    }
+
+    .links {
+        @include flexItemCenter();
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-bottom: 0.6rem;
+        padding-left: 0.4rem;
+        a {
+            @include linkStyle();
+            font-style: $font-style;
+            font-weight: $font-weight-normal;
+            padding-left: 0.83vw;
+            padding-right: 0.95vw;
+            margin-right: 0.6rem;
+            font-size: 1rem;
+            padding-bottom: 0.63rem;
+            padding-top: 0.63rem;
+            width: 100vw;
+            &:hover {
+                background-color: $orange;
+                color: $white;
+                border-radius: $border-radius-desk;
+            }
+            &:active {
+                background-color: $orange-dark;
+            }
+        }
+    }
+
+    .adBox-container-left {
+        .adBox-content-left {
+            button {
+                @include primaryBtnSml();
+            }
+        }
+        margin-bottom: 1vh;
+    }
+
+    .adBox-container-right {
+        padding-bottom: 3vh;
+        .adBox-content-right {
+            button {
+                @include primaryBtnSml();
+            }
+            .icons-wrapper {
+                @include flexItemCenter();
+                justify-content: space-between;
+                span {
+                    img {
+                        @include iconSizeSml();
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1022px) {
+    html {
+        padding: 0 $site-padding;
+    }
+
+    .app-wrapper {
+        height: 100vh;
+    }
+
+    .flex-main {
+        @include flexRow();
+        flex: 1 1 48.63vh;
+    }
+
+    .nav-menu {
+        padding-left: $site-padding;
+        margin-left: calc(-1 * $site-padding);
+        margin-right: calc(-1 * $site-padding);
+        padding-right: $site-padding;
+        .links-with-icons {
+            width: 50%;
+            align-items: baseline;
+            a {
+                span {
+                    line-height: $line-height-small;
+                }
+                &:hover {
+                    text-decoration: $text-decoration;
+                }
+
+                span:nth-child(2) {
+                    &:active {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .order-btn {
+                width: 5.05vw;
+                padding-top: 0.65vw;
+                padding-bottom: 0.65vw;
+            }
+        }
+    }
+
+    /*logotypes*/
+    .logo-types-container {
+        flex: 1 1 9.85vh;
+    }
+
+    /*adbox*/
+    .flex-adbox {
+        @include flexRow();
+        flex: 1 1 32.45vh;
+        .adBox-container-left {
+            width: 57%;
+            margin-right: 0.83vw;
+            margin-left: max(-1 * $site-padding, -1 * 7%);
+            background: url("./assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png");
+            @include backgroundSetup();
+            .adBox-content-left {
+                h2 {
+                    font-size: 1.82vw;
+                }
+                p {
+                    width: 15.67vw;
+                }
+                button {
+                    @include primaryBtn();
+                }
+            }
+        }
+        .adBox-container-right {
+            width: 57%;
+            margin-right: max(-1 * $site-padding, -1 * 7%);
+            background: url("./assets/aplikacja@2x.png");
+            @include backgroundSetup();
+            .adBox-content-right {
+                h2 {
+                    font-size: 1.82vw;
+                }
+                p {
+                    width: 16.88vw;
+                }
+
+                button {
+                    @include primaryBtn();
+                }
+                .icons-wrapper {
+                    height: 4vh;
+                    span {
+                        img {
+                            @include iconSize();
+                        }
+                        &:hover {
+                            @include iconSize();
+                            transform: scale(1.01);
+                        }
+                        &:active {
+                            @include iconSize();
+                            transform: scale(1.03);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-slide {
+        font-size: 2.92vw;
+        line-height: 7vh;
+        button {
+            @include primaryBtn();
+            margin-top: 1.56vh;
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
+    .swiper-pagination {
+        margin-bottom: 1.3rem;
+        text-align: unset;
+    }
+
+    .swiper {
+        width: calc(50% - (max(7% - $site-padding, 0px)));
+        margin-left: unset;
+        margin-left: calc(max(7% - $site-padding, 0px));
+    }
+
+    .page-image {
+        width: calc(50% + min($site-padding, 16%));
+        margin-right: max(-1 * $site-padding, -1 * 16%);
+        background: url("./assets/Bitmap@2x.png");
+        @include backgroundSetup();
+    }
+}
