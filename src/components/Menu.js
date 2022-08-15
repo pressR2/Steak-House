@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const Menu = () => {
     return (
         <ul className="links">
-            <Link to="/#">Steaks</Link>
-            <Link to="/#">Burgers</Link>
-            <Link to="/#">French fries</Link>
-            <Link to="/#">Drinks</Link>
-            <Link to="/#">Gdzie dowozimy?</Link>
-            <Link to="/#">Kontakt</Link>
+            <li><a to="/#">Steaks</a></li>
+            <li><a to="/#">Burgers</a></li>
+            <li><a to="/#">French fries</a></li>
+            <li><a to="/#">Drinks</a></li>
+            <li><a to="/#">Gdzie dowozimy?</a></li>
+            <li><a to="/#">Kontakt</a></li>
         </ul>
     );
 };

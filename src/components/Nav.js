@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import Menu from "./Menu";
 import logo from "../assets/l.png";
@@ -15,24 +14,30 @@ const Nav = () => {
                         <img src={logo} alt="" />
                     </div>
                     <ul className="links-with-icons">
-                        <Link to="/#" className="link-and-icon">
-                            <span>
-                                <img src={user} alt="" />
-                            </span>
-                            <span>Moje konto</span>
-                        </Link>
-                        <Link to="/#" className="link-and-icon">
-                            <span>
-                                <img src={basket} alt="" />
-                            </span>
-                            <span>Koszyk</span>
-                        </Link>
-                        <Link to="/#" className="order-btn">
-                            <span>
-                                <img src={order} alt="" />
-                            </span>
-                            <span>Zamów</span>
-                        </Link>
+                        <li>
+                            <a to="/#" className="link-and-icon">
+                                <span>
+                                    <img src={user} alt="" />
+                                </span>
+                                <span>Moje konto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a to="/#" className="link-and-icon">
+                                <span>
+                                    <img src={basket} alt="" />
+                                </span>
+                                <span>Koszyk</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a to="/#" className="order-btn">
+                                <span>
+                                    <img src={order} alt="" />
+                                </span>
+                                <span>Zamów</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <Menu />
@@ -46,24 +51,30 @@ const Nav = () => {
                         <Menu />
                     </div>
                     <ul className="links-with-icons">
-                        <Link to="/#" className="link-and-icon">
-                            <span>
-                                <img src={user} alt="" />
-                            </span>
-                            <span>Moje konto</span>
-                        </Link>
-                        <Link to="/#" className="link-and-icon">
-                            <span>
-                                <img src={basket} alt="" />
-                            </span>
-                            <span>Koszyk</span>
-                        </Link>
-                        <Link to="/#" className="order-btn">
-                            <span>
-                                <img src={order} alt="" />
-                            </span>
-                            <span>Zamów</span>
-                        </Link>
+                        <li>
+                            <a to="/#" className="link-and-icon">
+                                <span>
+                                    <img src={user} alt="" />
+                                </span>
+                                <span>Moje konto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a to="/#" className="link-and-icon">
+                                <span>
+                                    <img src={basket} alt="" />
+                                </span>
+                                <span>Koszyk</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a to="/#" className="order-btn">
+                                <span>
+                                    <img src={order} alt="" />
+                                </span>
+                                <span>Zamów</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </MediaQuery>

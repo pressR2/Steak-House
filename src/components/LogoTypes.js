@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PysznePl from "../assets/Bitmap-4.png";
 import DeliGoo from "../assets/e.png";
 import Glovo from "../assets/Bitmap.png";
@@ -9,31 +8,41 @@ const LogoTypes = () => {
     return (
         <div className="logo-types-container">
             <ul className="logo-types-list">
-                <Link to="/#">
-                    <span>
-                        <img src={PysznePl} alt="" />
-                    </span>
-                </Link>
-                <Link to="/#">
-                    <span>
-                        <img src={DeliGoo} alt="" />
-                    </span>
-                </Link>
-                <Link to="/#">
-                    <span>
-                        <img src={Glovo} alt="" />
-                    </span>
-                </Link>
-                <Link to="/#">
-                    <span>
-                        <img src={UberEats} alt="" />
-                    </span>
-                </Link>
-                <Link to="/#">
-                    <span>
-                        <img src={BoltFood} alt="" />
-                    </span>
-                </Link>
+                <li>
+                    <a to="/#">
+                        <span>
+                            <img src={PysznePl} alt="" />
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a to="/#">
+                        <span>
+                            <img src={DeliGoo} alt="" />
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a to="/#">
+                        <span>
+                            <img src={Glovo} alt="" />
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a to="/#">
+                        <span>
+                            <img src={UberEats} alt="" />
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a to="/#">
+                        <span>
+                            <img src={BoltFood} alt="" />
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
     );

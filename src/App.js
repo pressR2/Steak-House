@@ -25,7 +25,6 @@ const App = () => {
 
     return (
         <div className="app-wrapper">
-            <Router>
                 <Nav />
                 <div className="flex-main">
                     <Slider />
@@ -47,7 +46,6 @@ const App = () => {
                         icons={iconsArray}
                     />
                 </div>
-            </Router>
         </div>
     );
 };
