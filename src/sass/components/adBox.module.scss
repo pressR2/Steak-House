@@ -1,0 +1,101 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.adBox-container-a {
+  background-image: url("../../assets/dana-devolk-x2cNcfz_xXU-unsplash.png");
+  background-image: -webkit-image-set(
+    url("../../assets/dana-devolk-x2cNcfz_xXU-unsplash.png") 1x,
+    url("../../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png") 2x
+  );
+  background-image: image-set(
+    url("../../assets/dana-devolk-x2cNcfz_xXU-unsplash.png") 1x,
+    url("../../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png") 2x
+  );
+  margin-left: 2.25rem;
+  margin-right: 1rem;
+  @include adBoxSetup();
+}
+
+.adBox-container-b {
+  background-image: url("../../assets/aplikacja.png");
+  background-image: -webkit-image-set(
+    url("../../assets/aplikacja.png") 1x,
+    url("../../assets/aplikacja@2x.png") 2x
+  );
+  background-image: image-set(
+    url("../../assets/aplikacja.png") 1x,
+    url("../../assets/aplikacja@2x.png") 2x
+  );
+  margin-right: 2.25rem;
+  @include adBoxSetup();
+}
+
+.adBox-content-a,
+.adBox-content-b {
+  padding: 0 0.75rem;
+}
+
+.adBox-content-a h2,
+.adBox-content-b h2 {
+  font-size: 1.4rem;
+  font-weight: $bold;
+}
+
+.adBox-content-a p,
+.adBox-content-b p {
+  line-height: 0.55rem;
+}
+
+.adBox-content-a span {
+  background-color: $black;
+  padding: 0 0.2rem;
+  font-weight: 600;
+}
+
+.adBox-content-b p span {
+  background-color: $red;
+  padding: 0 0.2rem;
+  font-weight: 600; 
+}
+
+.adBox-content-a button,
+.adBox-content-b button,
+.swiper button {
+  cursor: pointer;
+  @include primaryBtn();
+}
+
+.adBox-content-a button {
+  margin: 2.5rem 0 2rem;
+}
+
+.adBox-content-b button {
+  margin-bottom: 2rem;
+}
+
+.adBox-content-a button:hover,
+.adBox-content-b button:hover {
+  text-decoration: underline;
+}
+
+.adBox-content-a button:active,
+.adBox-content-b button:active {
+  @include activeBtn();
+}
+
+.icons-wrapper {
+  margin: 0.312rem 0 0.312rem -0.25rem;
+}
+
+.icons-wrapper a img {
+  cursor: pointer;
+  padding: 0.5625rem 0.312rem;
+}
+
+.icons-wrapper img:hover {
+  transform: scale(0.95);
+}
+
+.icons-wrapper img:active {
+  transform: scale(0.91);
+}

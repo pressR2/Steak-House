@@ -3,28 +3,35 @@ import playStoreIcon from "../assets/Group 4.svg";
 import huaweiIcon from "../assets/huawei-app-badge-9757fa 2.svg";
 
 const AdBoxB = () => {
-    const iconsArray = [playStoreIcon, appStoreIcon, huaweiIcon];
+  const iconsArray = [
+    [playStoreIcon, "Play Store logo"],
+    [appStoreIcon, "App Store logo"],
+    [huaweiIcon, "Huawei logo"],
+  ];
 
-    return (
-        <div className="adBox-container-b">
-            <div className="adBox-content-b">
-                <h2>UberEats</h2>
-                <p>
-                    Zamawiaj w aplikacji <span>10% taniej.</span> Pobierz UberEats już dziś.
-                </p>
-                <div className="icons-wrapper">
-                    {iconsArray?.map((item, index) => {
-                        return (
-                            <span key={index}>
-                                <img src={item} alt="" />
-                            </span>
-                        );
-                    })}
-                </div>
-                <button type="button">Zamów online</button>
-            </div>
+  return (
+    <div className="adBox-container-b">
+      <div className="adBox-content-b">
+        <h2>UberEats</h2>
+        <p>
+          Zamawiaj w aplikacji <span>10% taniej.</span>
+        </p>
+        <p>Pobierz aplikację UberEats już dziś.</p>
+        <div className="icons-wrapper">
+          {iconsArray?.map((item, index) => {
+            return (
+              <a href="/#">
+                <span key={index}>
+                  <img src={item[0]} alt={item[1]} />
+                </span>
+              </a>
+            );
+          })}
         </div>
-    );
+        <button type="button">Zamów online</button>
+      </div>
+    </div>
+  );
 };
 
 export default AdBoxB;

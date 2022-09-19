@@ -5,47 +5,15 @@ import UberEats from "../assets/Bitmap-2.png";
 import BoltFood from "../assets/Bitmap-3.png";
 
 const LogoTypes = () => {
-    return (
-        <div className="logo-types-container">
-            <ul className="logo-types-list">
-                <li>
-                    <a to="/#">
-                        <span>
-                            <img src={PysznePl} alt="" />
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a to="/#">
-                        <span>
-                            <img src={DeliGoo} alt="" />
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a to="/#">
-                        <span>
-                            <img src={Glovo} alt="" />
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a to="/#">
-                        <span>
-                            <img src={UberEats} alt="" />
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a to="/#">
-                        <span>
-                            <img src={BoltFood} alt="" />
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    );
+  return (
+    <div className="logo-types-list">
+      <img src={PysznePl} alt="PysznePl logo" />
+      <img src={DeliGoo} alt="DeliGoo logo" />
+      <img src={Glovo} alt="Glovo logo" />
+      <img src={UberEats} alt="UberEats logo" />
+      <img src={BoltFood} alt="BoltFood logo" />
+    </div>
+  );
 };
 
 export default LogoTypes;

@@ -1,0 +1,258 @@
+@use "./components/adBox.module";
+@use "./components/header.module";
+@use "./components/logoTypes.module";
+@use "./components/menu.module";
+@use "./components/menuMobile.module";
+@use "./components/pageImage.module";
+@use "./components/slider.module";
+@import "../sass/abstracts/variables.scss";
+@import "../sass/abstracts/mixins.scss";
+
+body {
+  font-family: "sofia_prolight", sans-serif;
+  margin: $no-margin;
+  min-height: 100vh;
+  padding: $no-padding;
+  width: $full-width;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: $full-width;
+}
+
+.content {
+  padding-top: 5.0625rem;
+  width: $full-width;
+}
+
+.flex-main {
+  align-content: flex-start;
+  flex: 0 0 48.63%;
+  overflow: hidden;
+  @include flexRow();
+}
+
+.flex-adbox {
+  flex: 0 0 32.45%;
+  width: $full-width;
+  @include flexRow();
+}
+
+@media only screen and (max-width: 956px) {
+  .header {
+    background-color: $white;
+    margin: $no-margin;
+    position: fixed;
+    top: 0;
+    width: $full-width;
+    z-index: 11;
+  }
+
+  .flex-main {
+    flex-direction: column;
+    margin: $no-margin;
+  }
+
+  .swiper {
+    margin-bottom: 2.812rem;
+    width: $full-width;
+  }
+
+  .slider-button-wrapper {
+    padding: 0 0.75rem;
+  }
+
+  .logo-types-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .logo-types-list img {
+    height: 1.688rem;
+    padding: 0 0.6rem;
+  }
+
+  .logo-types-list :nth-child(2) {
+    height: 0.875rem;
+  }
+
+  .flex-adbox {
+    flex-direction: column;
+    padding-bottom: 0.625rem;
+  }
+
+  .adBox-container-a,
+  .adBox-container-b {
+    margin: 0 0 0.94rem;
+    width: $full-width;
+  }
+}
+
+@media only screen and (min-width: 957px) {
+  .content {
+    padding: $no-padding;
+  }
+
+  .swiper,
+  .page-image {
+    width: 50%;
+  }
+
+  .header-items-container .order-btn {
+    padding: 0.906rem 1.563rem;
+  }
+}
+
+@media only screen and (min-width: 957px) and (max-width: 1680px) {
+  .logo-with-menu {
+    padding-left: 2.25rem;
+  }
+
+  .swiper p:first-child,
+  .swiper p:nth-child(2),
+  .slider-button-wrapper {
+    padding-left: 3rem;
+  }
+
+  .header-items-container {
+    padding-right: 2.25rem;
+  }
+
+  .swiper p {
+    width: 85%;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0.625rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1680px) {
+  .header,
+  .menu-toggle {
+    font-size: 0.75rem;
+  }
+
+  .swiper p:first-child {
+    font-size: 2.375rem;
+  }
+
+  .swiper p:nth-child(2) {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .adBox-content-a h2,
+  .adBox-content-b h2 {
+    font-size: 1.75rem;
+  }
+
+  .adBox-content-a p,
+  .adBox-content-b p {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .content {
+    height: 100vh;
+    @include flexColumn();
+  }
+
+  .app-wrapper {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1681px) {
+  .header {
+    font-size: 0.875rem;
+  }
+
+  .adBox-content-a,
+  .adBox-content-b {
+    margin-left: 7rem;
+  }
+
+  .logo-with-menu,
+  .swiper p:first-child,
+  .swiper p:nth-child(2),
+  .slider-button-wrapper {
+    margin-left: 8.625rem;
+  }
+
+  .header-items-container {
+    margin-right: 8.625rem;
+  }
+
+  .logo img {
+    @include heightAndWidth(2.94rem, 3rem);
+  }
+
+  .header-items-container .account-info,
+  .header-items-container .basket {
+    padding: 0.625rem 1.125rem;
+  }
+
+  .swiper-slide p {
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+
+  .swiper p:first-child {
+    font-size: 3.5rem;
+    line-height: 4.06rem;
+    width: 80%;
+  }
+
+  .swiper p:nth-child(2) {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    padding-bottom: 2.25rem;
+    width: 50%;
+  }
+
+  .slider-button-wrapper {
+    padding-left: 0.75rem;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 3.125rem;
+    padding-left: 9.25rem;
+    text-align: left;
+  }
+
+  .swiper p:nth-child(2) {
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+  }
+
+  .adBox-content-a button,
+  .adBox-content-b button,
+  .swiper button {
+    font-size: 0.906rem;
+    padding: 1.078rem 3.556rem;
+  }
+
+  .adBox-content-a h2,
+  .adBox-content-b h2 {
+    font-size: 2.1875rem;
+    line-height: 2rem;
+  }
+
+  .adBox-content-a p,
+  .adBox-content-b p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: $no-margin;
+  }
+}

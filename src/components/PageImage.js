@@ -1,19 +1,16 @@
-import pageImage from "../assets/Bitmapv.png";
-import MediaQuery from "react-responsive";
+import pageImageBig from "../assets/Bitmap@2x.png";
+import pageImageSmall from "../assets/Bitmapv.png";
 
 const PageImage = () => {
-    return (
-        <>
-            <MediaQuery minWidth={1022}>
-                <div className="page-image" role="image"></div>
-            </MediaQuery>
-            <MediaQuery maxWidth={1021}>
-                <div className="page-mobile-image" role="image">
-                    <img src={pageImage} alt="" />
-                </div>
-            </MediaQuery>
-        </>
-    );
+  return (
+    <div className="page-image">
+      <img
+        src={pageImageSmall}
+        srcSet={`${pageImageSmall} 1x, ${pageImageBig} 2x`}
+        alt="Men cutting a steak"
+      />
+    </div>
+  );
 };
 
 export default PageImage;

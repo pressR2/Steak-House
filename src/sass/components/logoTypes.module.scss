@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.logo-types-list {
+  flex: 0 0 6.02%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc($full-width - 38.3%);
+  @include flexItemCenter();
+}

@@ -1,16 +1,28 @@
-import { Link } from "react-router-dom";
-
 const Menu = () => {
-    return (
-        <ul className="links">
-            <li><a to="/#">Steaks</a></li>
-            <li><a to="/#">Burgers</a></li>
-            <li><a to="/#">French fries</a></li>
-            <li><a to="/#">Drinks</a></li>
-            <li><a to="/#">Gdzie dowozimy?</a></li>
-            <li><a to="/#">Kontakt</a></li>
-        </ul>
-    );
+  return (
+    <div className="nav-bar">
+      <ul className="main-list">
+        <li className="category-link">
+          <a href="/#">Steaks</a>
+        </li>
+        <li className="category-link">
+          <a href="/#">Burgers</a>
+        </li>
+        <li className="category-link">
+          <a href="/#">French fries</a>
+        </li>
+        <li className="category-link">
+          <a href="/#">Drinks</a>
+        </li>
+        <li className="category-link">
+          <a href="/#">Gdzie dowozimy?</a>
+        </li>
+        <li className="category-link">
+          <a href="/#">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Menu;

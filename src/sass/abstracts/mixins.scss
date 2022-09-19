@@ -1,0 +1,44 @@
+@mixin primaryBtn {
+    display: block;
+    padding: 1.062rem 1.562rem;
+    color: $white;
+    background-color: $red;
+    border: none;
+    border-radius: 0.625rem;
+    line-height: 0.906rem;
+}
+
+@mixin activeBtn {
+    background-color: $red-dark;
+    text-decoration: none;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexItemCenter() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin adBoxSetup {
+  border-radius: 0.44rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  font-size: 0.875rem;
+  width: 50%;
+  @include flexItemCenter();
+}
+
+@mixin heightAndWidth($height, $width) {
+    height: $height;
+    width: $width;
+}

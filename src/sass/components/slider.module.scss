@@ -1,0 +1,63 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.swiper p:first-child {
+  font-weight: $bold;
+  padding: 1.25rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1.875rem;
+  overflow-wrap: break-word;
+}
+
+.swiper p:first-child span {
+  background-color: $black;
+  color: $white;
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+.swiper p:nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: $no-margin;
+  padding: 0 0.75rem 2.25rem;
+}
+
+.swiper span:nth-child(2),
+.swiper p:nth-child(2) span:first-child {
+  font-weight: 600;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  background-image: url("../../assets/Oval Copy 2.svg");
+  background: #ccc;
+  margin-right: 1.313rem;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-image: url("../../assets/Oval Copy 5.svg");
+  @include heightAndWidth(0.5625rem, 0.5625rem);
+}
+
+.swiper button {
+  @include primaryBtn();
+}
+
+.swiper button:hover {
+  text-decoration: underline;
+}
+
+.swiper button:active {
+  @include activeBtn();
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  text-align: end;
+  width: 95%;
+}
