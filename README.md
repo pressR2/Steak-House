@@ -1,5 +1,5 @@
 # Steak house
-This is a website of the restaurant made on the mockup pattern from https://www.figma.com/file/7v0bTZcKyIO1BEcluPuZp9/Steak_house?node-id=1%3A2.
+This is a website of a restaurant made on the mockup pattern from https://www.figma.com/file/7v0bTZcKyIO1BEcluPuZp9/Steak_house?node-id=1%3A2.  
 The main goal of the project was to build a fully responsive web application using HTML, SCSS and JS technology.
 
 | Desktop view   | Mobile view |
