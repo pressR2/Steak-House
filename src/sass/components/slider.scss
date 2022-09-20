@@ -1,12 +1,35 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
+.swiper {
+  @media only screen and (max-width: 956px) {
+    margin-bottom: 2.812rem;
+    width: $full-width;
+  }
+  @media only screen and (min-width: 957px) {
+    width: 50%;
+  }
+}
+
 .swiper h2 {
-  font-weight: $bold;
-  padding: 1.25rem 0.75rem;
-  margin-bottom: 0;
   font-size: 1.875rem;
+  font-weight: $bold;
+  margin-bottom: 0;
   overflow-wrap: break-word;
+  padding: 1.25rem 0.75rem;
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    padding-left: 3rem;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1680px) {
+    font-size: 2.375rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    font-size: 3.5rem;
+    line-height: 4.06rem;
+    margin-left: 8.625rem;
+    margin-top: 60px;
+    width: 80%;
+  }
 }
 
 .swiper h2 span {
@@ -23,10 +46,44 @@
   line-height: 1.25rem;
   margin: $no-margin;
   padding: 0 0.75rem 2.25rem;
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    padding-left: 3rem;
+    width: 85%;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1680px) {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    margin-left: 8.625rem;
+    overflow-wrap: break-word;
+    padding-bottom: 2.25rem;
+    text-align: left;
+    width: 49%;
+  }
 }
 
 .swiper p span {
   font-weight: 600;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  text-align: end;
+  width: 95%;
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    bottom: 0.625rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    bottom: 3.125rem;
+    padding-left: 9.25rem;
+    text-align: left;
+  }
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
@@ -40,8 +97,25 @@
   @include heightAndWidth(0.5625rem, 0.5625rem);
 }
 
+.swiper-button-wrapper {
+  @media only screen and (max-width: 956px) {
+    padding: 0 0.75rem;
+  }
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    padding-left: 3rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    margin-left: 8.625rem;
+    padding-left: 0.75rem;
+  }
+}
+
 .swiper button {
   @include primaryBtn();
+  @media only screen and (min-width: 1681px) {
+    font-size: 0.906rem;
+    padding: 1.078rem 3.556rem;
+  }
 }
 
 .swiper button:hover {
@@ -50,13 +124,4 @@
 
 .swiper button:active {
   @include activeBtn();
-}
-
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
-  text-align: end;
-  width: 95%;
 }

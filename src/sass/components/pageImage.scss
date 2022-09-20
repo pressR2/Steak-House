@@ -1,5 +1,11 @@
 @import "../abstracts/variables";
 
+.page-image {
+  @media only screen and (min-width: 957px) {
+    width: 50%;
+  }
+}
+
 .page-image img {
   max-width: $full-width;
 }

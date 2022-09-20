@@ -8,4 +8,21 @@
   margin-right: auto;
   width: calc($full-width - 38.3%);
   @include flexItemCenter();
+  @media only screen and (max-width: 956px) {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.logo-types-list img {
+  @media only screen and (max-width: 956px) {
+    height: 1.688rem;
+    padding: 0 0.6rem;
+  }
+}
+
+.logo-types-list :nth-child(2) {
+  @media only screen and (max-width: 956px) {
+    height: 0.875rem;
+  }
 }

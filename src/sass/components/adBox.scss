@@ -14,6 +14,10 @@
   margin-left: 2.25rem;
   margin-right: 1rem;
   @include adBoxSetup();
+  @media only screen and (max-width: 956px) {
+    margin: 0 0 0.94rem;
+    width: $full-width;
+  }
 }
 
 .adBox-container-b {
@@ -28,22 +32,45 @@
   );
   margin-right: 2.25rem;
   @include adBoxSetup();
+  @media only screen and (max-width: 956px) {
+    margin: 0 0 0.94rem;
+    width: $full-width;
+  }
 }
 
 .adBox-content-a,
 .adBox-content-b {
   padding: 0 0.75rem;
+  @media only screen and (min-width: 1681px) {
+    margin-left: 7rem;
+  }
 }
 
 .adBox-content-a h2,
 .adBox-content-b h2 {
   font-size: 1.4rem;
   font-weight: $bold;
+  @media only screen and (min-width: 1200px) and (max-width: 1680px) {
+    font-size: 1.75rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    font-size: 2.1875rem;
+    line-height: 2rem;
+  }
 }
 
 .adBox-content-a p,
 .adBox-content-b p {
   line-height: 1.4rem;
+  @media only screen and (min-width: 1200px) and (max-width: 1680px) {
+    font-size: 1.125rem;
+    line-height: 1.85rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: $no-margin;
+  }
 }
 
 .inner-content {
@@ -53,14 +80,14 @@
 
 .bg-black {
   background-color: $black;
-  padding: 0 0.2rem;
   font-weight: 600;
+  padding: 0 0.2rem;
 }
 
 .bg-red {
   background-color: $red;
-  padding: 0 0.2rem;
   font-weight: 600;
+  padding: 0 0.2rem;
 }
 
 .adBox-content-a button,
@@ -72,10 +99,18 @@
 
 .adBox-content-a button {
   margin: 2.5rem 0 2rem;
+  @media only screen and (min-width: 1681px) {
+    font-size: 0.906rem;
+    padding: 1.078rem 3.556rem;
+  }
 }
 
 .adBox-content-b button {
   margin-bottom: 2rem;
+  @media only screen and (min-width: 1681px) {
+    font-size: 0.906rem;
+    padding: 1.078rem 3.556rem;
+  }
 }
 
 .adBox-content-a button:hover,
