@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-.swiper p:first-child {
+.swiper h2 {
   font-weight: $bold;
   padding: 1.25rem 0.75rem;
   margin-bottom: 0;
@@ -9,14 +9,14 @@
   overflow-wrap: break-word;
 }
 
-.swiper p:first-child span {
+.swiper h2 span {
   background-color: $black;
   color: $white;
   display: inline-block;
   padding: 0 0.2rem;
 }
 
-.swiper p:nth-child(2) {
+.swiper p {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -25,8 +25,7 @@
   padding: 0 0.75rem 2.25rem;
 }
 
-.swiper span:nth-child(2),
-.swiper p:nth-child(2) span:first-child {
+.swiper p span {
   font-weight: 600;
 }
 

@@ -111,8 +111,8 @@ body {
     padding-left: 2.25rem;
   }
 
-  .swiper p:first-child,
-  .swiper p:nth-child(2),
+  .swiper h2,
+  .swiper p,
   .slider-button-wrapper {
     padding-left: 3rem;
   }
@@ -139,11 +139,11 @@ body {
     font-size: 0.75rem;
   }
 
-  .swiper p:first-child {
+  .swiper h2 {
     font-size: 2.375rem;
   }
 
-  .swiper p:nth-child(2) {
+  .swiper p {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
@@ -182,8 +182,8 @@ body {
   }
 
   .logo-with-menu,
-  .swiper p:first-child,
-  .swiper p:nth-child(2),
+  .swiper h2,
+  .swiper p,
   .slider-button-wrapper {
     margin-left: 8.625rem;
   }
@@ -206,17 +206,18 @@ body {
     text-align: left;
   }
 
-  .swiper p:first-child {
+  .swiper h2 {
     font-size: 3.5rem;
     line-height: 4.06rem;
+    margin-top: 60px;
     width: 80%;
   }
 
-  .swiper p:nth-child(2) {
+  .swiper p {
     font-size: 1.25rem;
     line-height: 1.56rem;
     padding-bottom: 2.25rem;
-    width: 50%;
+    width: 49%;
   }
 
   .slider-button-wrapper {
@@ -232,7 +233,7 @@ body {
     text-align: left;
   }
 
-  .swiper p:nth-child(2) {
+  .swiper p {
     font-size: 1.25rem;
     line-height: 1.563rem;
   }
