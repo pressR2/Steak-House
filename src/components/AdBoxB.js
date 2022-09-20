@@ -13,10 +13,12 @@ const AdBoxB = () => {
     <div className="adBox-container-b">
       <div className="adBox-content-b">
         <h2>UberEats</h2>
-        <p>
-          Zamawiaj w aplikacji <span>10% taniej.</span>
+        <p className="inner-content">
+          <span>
+            Zamawiaj w aplikacji <span className="bg-red">10% taniej.</span>
+          </span>
+          <span>Pobierz aplikację UberEats już dziś.</span>
         </p>
-        <p>Pobierz aplikację UberEats już dziś.</p>
         <div className="icons-wrapper">
           {iconsArray?.map((item, index) => {
             return (

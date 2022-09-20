@@ -43,19 +43,24 @@
 
 .adBox-content-a p,
 .adBox-content-b p {
-  line-height: 0.55rem;
+  line-height: 1.4rem;
 }
 
-.adBox-content-a span {
+.inner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-black {
   background-color: $black;
   padding: 0 0.2rem;
   font-weight: 600;
 }
 
-.adBox-content-b p span {
+.bg-red {
   background-color: $red;
   padding: 0 0.2rem;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .adBox-content-a button,
