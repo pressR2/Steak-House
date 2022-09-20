@@ -26,7 +26,7 @@ const Slider = () => {
             <span>promocji -10%</span>. Spiesz się, czas trwania promocji do
             końca lipca.
           </p>
-          <div className="slider-button-wrapper">
+          <div className="swiper-button-wrapper">
             <button type="button">Zamów online</button>
           </div>
         </SwiperSlide>
@@ -40,7 +40,7 @@ const Slider = () => {
             <span>Burger Vega, Steak farmerski</span>. Z tej okazji przy zakupie
             zestawu promocyjnego okulary dostaniesz <span>Gratis</span>.
           </p>
-          <div className="slider-button-wrapper">
+          <div className="swiper-button-wrapper">
             <button type="button">Zamów online</button>
           </div>
         </SwiperSlide>
@@ -53,7 +53,7 @@ const Slider = () => {
             zakupie 2xBurgerów XL, frytki dostaniesz za 5 zł. Promocja
             obowiązuje do godziny 12:00.
           </p>
-          <div className="slider-button-wrapper">
+          <div className="swiper-button-wrapper">
             <button type="button">Zamów online</button>
           </div>
         </SwiperSlide>
