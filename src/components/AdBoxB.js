@@ -20,7 +20,7 @@ const AdBoxB = () => {
           <span>Pobierz aplikację UberEats już dziś.</span>
         </p>
         <div className="icons-wrapper">
-          {iconsArray?.map((item, index) => {
+          {iconsArray.map((item, index) => {
             return (
               <a href="/#">
                 <span key={index}>
