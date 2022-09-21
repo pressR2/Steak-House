@@ -10,7 +10,7 @@ const MenuMobile = () => {
   };
 
   return (
-    <>
+    <aside>
       <button className="menu-toggle" onClick={handleMenu} type="button">
         <img src={menuIcon} alt="Hamburger menu button" />
         <span>Menu</span>
@@ -21,7 +21,7 @@ const MenuMobile = () => {
         </button>
         <Menu />
       </div>
-    </>
+    </aside>
   );
 };
 

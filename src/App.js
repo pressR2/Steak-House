@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import TopAppBar from "./components/TopAppBar";
 import Slider from "./components/Slider";
 import PageImage from "./components/PageImage";
 import LogoTypes from "./components/LogoTypes";
@@ -10,18 +10,18 @@ import "./font/stylesheet.scss";
 const App = () => {
   return (
     <div className="app-wrapper">
-      <Header />
-      <div className="content">
-        <div className="flex-main">
+      <TopAppBar />
+      <main>
+        <section className="flex-main">
           <Slider />
           <PageImage />
-        </div>
+        </section>
         <LogoTypes />
-        <div className="flex-adbox">
+        <section className="flex-adbox">
           <AdBoxA />
           <AdBoxB />
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };

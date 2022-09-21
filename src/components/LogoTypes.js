@@ -6,13 +6,23 @@ import BoltFood from "../assets/Bitmap-3.png";
 
 const LogoTypes = () => {
   return (
-    <div className="logo-types-list">
-      <img src={PysznePl} alt="PysznePl logo" />
-      <img src={DeliGoo} alt="DeliGoo logo" />
-      <img src={Glovo} alt="Glovo logo" />
-      <img src={UberEats} alt="UberEats logo" />
-      <img src={BoltFood} alt="BoltFood logo" />
-    </div>
+    <ul className="logo-types-list">
+      <li>
+        <img src={PysznePl} alt="PysznePl logo" />
+      </li>
+      <li>
+        <img src={DeliGoo} alt="DeliGoo logo" />
+      </li>
+      <li>
+        <img src={Glovo} alt="Glovo logo" />
+      </li>
+      <li>
+        <img src={UberEats} alt="UberEats logo" />
+      </li>
+      <li>
+        <img src={BoltFood} alt="BoltFood logo" />
+      </li>
+    </ul>
   );
 };
 

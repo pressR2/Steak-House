@@ -1,6 +1,6 @@
 const AdBoxA = () => {
   return (
-    <div className="adBox-container-a">
+    <section className="adBox-container-a">
       <div className="adBox-content-a">
         <h2>Zestaw dla 3 osób</h2>
         <p className="inner-content">
@@ -12,7 +12,7 @@ const AdBoxA = () => {
         </p>
         <button type="button">Zamów online</button>
       </div>
-    </div>
+    </section>
   );
 };
 

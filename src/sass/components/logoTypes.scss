@@ -4,8 +4,9 @@
 .logo-types-list {
   flex: 0 0 6.02%;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  list-style: none;
+  margin: 0 auto;
+  padding: $no-padding;
   width: calc($full-width - 38.3%);
   @include flexItemCenter();
   @media only screen and (max-width: 956px) {
@@ -16,13 +17,6 @@
 
 .logo-types-list img {
   @media only screen and (max-width: 956px) {
-    height: 1.688rem;
     padding: 0 0.6rem;
-  }
-}
-
-.logo-types-list :nth-child(2) {
-  @media only screen and (max-width: 956px) {
-    height: 0.875rem;
   }
 }

@@ -10,7 +10,7 @@ const AdBoxB = () => {
   ];
 
   return (
-    <div className="adBox-container-b">
+    <section className="adBox-container-b">
       <div className="adBox-content-b">
         <h2>UberEats</h2>
         <p className="inner-content">
@@ -23,16 +23,16 @@ const AdBoxB = () => {
           {iconsArray.map((item, index) => {
             return (
               <a href="/#">
-                <span key={index}>
+                <figure key={index}>
                   <img src={item[0]} alt={item[1]} />
-                </span>
+                </figure>
               </a>
             );
           })}
         </div>
         <button type="button">Zamów online</button>
       </div>
-    </div>
+    </section>
   );
 };
 

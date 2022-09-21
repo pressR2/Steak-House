@@ -3,7 +3,7 @@ import pageImageSmall from "../assets/Bitmapv.png";
 
 const PageImage = () => {
   return (
-    <div className="page-image">
+    <figure className="page-image">
       <picture>
         <source
           media="(min-width: 475px)"
@@ -11,7 +11,7 @@ const PageImage = () => {
         ></source>
         <img src={pageImageSmall} alt="Men cutting a steak" />
       </picture>
-    </div>
+    </figure>
   );
 };
 

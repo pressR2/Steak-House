@@ -39,39 +39,37 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  left: -100%;
+  transform: translate3d(100%, 0px, 0px);
+  transition: all 0.4s ease-in-out;
   @include flexColumn();
   @include heightAndWidth(100%, $full-width);
-  @media only screen and (max-width: 1199px) {
-    left: -100%;
-    transform: translate3d(100%, 0px, 0px);
-    transition: all 0.4s ease-in-out;
-  }
 }
 
 .menu-toggle {
   font-size: 0.625rem;
-  padding: 0.625rem 0.75rem;
-  @media only screen and (max-width: 1199px) {
-    background-color: $white;
-    border: none;
-    flex-direction: column;
-    font-family: "sofia_prolight", sans-serif;
-    line-height: 0.875rem;
-    @include flexItemCenter();
+  padding: 0.625rem 0.67rem;
+  background-color: $white;
+  border: none;
+  flex-direction: column;
+  font-family: "sofia_prolight", sans-serif;
+  line-height: 0.875rem;
+  @include flexItemCenter();
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    margin-right: 2.25rem;
   }
   @media only screen and (min-width: 1200px) and (max-width: 1680px) {
     font-size: 0.75rem;
   }
+  @media only screen and (min-width: 1681px) {
+    margin-right: 8.625rem;
+  }
 }
 
 .menu-toggle img {
-  @media only screen and (max-width: 1199px) {
-    @include heightAndWidth(1.45rem, 1.45rem);
-  }
+  @include heightAndWidth(1.45rem, 1.45rem);
 }
 
 .menu-toggle:active {
-  @media only screen and (max-width: 1199px) {
-    transform: scale(0.95);
-  }
+  transform: scale(0.95);
 }

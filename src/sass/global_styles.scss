@@ -5,6 +5,7 @@
 @use "./components/menuMobile";
 @use "./components/pageImage";
 @use "./components/slider";
+@use "./components/topAppBar.scss";
 @import "../sass/abstracts/variables.scss";
 @import "../sass/abstracts/mixins.scss";
 
@@ -26,7 +27,7 @@ body {
   }
 }
 
-.content {
+main {
   padding-top: 5.0625rem;
   width: $full-width;
   @media only screen and (min-width: 957px) {

@@ -61,14 +61,13 @@
 .main-list {
   display: flex;
   list-style: none;
-  padding-left: 2.625rem;
+  padding: $no-padding;
   @media only screen and (max-width: 1199px) {
     display: block;
     font-size: 1rem;
     font-weight: 500;
     list-style: none;
     margin: $no-margin;
-    padding: $no-padding;
     text-align: left;
   }
 }
@@ -80,4 +79,69 @@
     margin: 5.0625rem auto;
     @include heightAndWidth(100%, $full-width);
   }
+}
+
+.nav-items-container {
+  @media only screen and (max-width: 1199px) {
+    position: absolute;
+    margin: 0.875rem 0 0 0.875rem;
+  }
+}
+
+.nav-items {
+  flex-wrap: wrap;
+  list-style: none;
+  line-height: 0.875rem;
+  margin: $no-margin;
+  padding: 0 0.75rem 0 0;
+  @include flexItemCenter();
+  @media only screen and (min-width: 957px) and (max-width: 1680px) {
+    padding-right: 2.25rem;
+  }
+  @media only screen and (min-width: 1681px) {
+    margin-right: 8.625rem;
+  }
+}
+
+.nav-items .account-info,
+.nav-items .basket {
+  padding: 0.625rem 0.5rem;
+  @media only screen and (min-width: 1681px) {
+    padding: 0.625rem 1.125rem;
+  }
+}
+
+.nav-items li:nth-child(2) {
+  padding: 0 1rem;
+}
+
+.nav-items .order-btn {
+  background-color: $red;
+  border-radius: 0.625rem;
+  color: $white;
+  padding: 0.625rem 1.188rem;
+  @media only screen and (min-width: 957px) {
+    padding: 0.906rem 1.563rem;
+  }
+}
+
+.nav-items li {
+  cursor: pointer;
+  @include flexColumn();
+}
+
+.nav-items a {
+  flex-direction: column;
+  text-decoration: none;
+  color: $black;
+  @include flexItemCenter();
+}
+
+.nav-items li:active {
+  text-decoration: none;
+  transform: scale(0.95);
+}
+
+.nav-items li:hover {
+  text-decoration: underline;
 }
