@@ -4,7 +4,7 @@ import PageImage from "./components/PageImage";
 import LogoTypes from "./components/LogoTypes";
 import AdBoxA from "./components/AdBoxA";
 import AdBoxB from "./components/AdBoxB";
-import "./sass/global_styles.scss";
+import "./sass/main.scss";
 import "./font/stylesheet.scss";
 
 const App = () => {
