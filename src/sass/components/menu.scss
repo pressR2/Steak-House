@@ -8,7 +8,7 @@
     border-bottom: 1px solid #e8e8e8;
     display: block;
     font-family: "sofia_prolight", sans-serif;
-    font-weight: $bolder;
+    font-weight: $normal;
     letter-spacing: 0.047rem;
     padding: 1rem 1.25rem;
     text-transform: uppercase;
@@ -36,7 +36,7 @@
   text-decoration: none;
   @media only screen and (max-width: 1199px) {
     color: $white;
-    font-weight: $bolder;
+    font-weight: $normal;
   }
 }
 
