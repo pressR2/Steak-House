@@ -20,7 +20,8 @@ const Slider = () => {
         <SwiperSlide>
           <article>
             <h2>
-              <span>Rabat 10%</span> na<br></br> pierwsze zamówienie!
+              <span>Rabat 10%</span> na
+              <br /> pierwsze zamówienie!
             </h2>
             <p>
               Do 20 czerwca złóż zamówienie na stronie i skorzystaj z{" "}
@@ -35,7 +36,7 @@ const Slider = () => {
         <SwiperSlide>
           <article>
             <h2>
-              Okulary przeciwsłoneczne <br></br>
+              Okulary przeciwsłoneczne <br />
               <span>GRATIS</span>
             </h2>
             <p>
