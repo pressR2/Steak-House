@@ -18,3 +18,11 @@
     @include heightAndWidth(2.94rem, 3rem);
   }
 }
+
+.logo img:hover {
+  transform: scale(0.98);
+}
+
+.logo img:active {
+  transform: scale(0.95);
+}
