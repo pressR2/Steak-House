@@ -9,7 +9,7 @@ const PageImage = () => {
           media="(min-width: 475px)"
           srcSet={`${pageImageBig} 2x`}
         ></source>
-        <img src={pageImageSmall} alt="Men cutting a steak" />
+        <img src={pageImageSmall} alt="Man cutting a steak" />
       </picture>
     </figure>
   );
