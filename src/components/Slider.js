@@ -28,10 +28,10 @@ const Slider = () => {
               <span>promocji -10%</span>. Spiesz się, czas trwania promocji do
               końca lipca.
             </p>
+            <div className="swiper-button-wrapper">
+              <button type="button">Zamów online</button>
+            </div>
           </article>
-          <div className="swiper-button-wrapper">
-            <button type="button">Zamów online</button>
-          </div>
         </SwiperSlide>
         <SwiperSlide>
           <article>
@@ -45,10 +45,10 @@ const Slider = () => {
               zakupie zestawu promocyjnego okulary dostaniesz{" "}
               <span>Gratis</span>.
             </p>
+            <div className="swiper-button-wrapper">
+              <button type="button">Zamów online</button>
+            </div>
           </article>
-          <div className="swiper-button-wrapper">
-            <button type="button">Zamów online</button>
-          </div>
         </SwiperSlide>
         <SwiperSlide>
           <article>
@@ -60,10 +60,10 @@ const Slider = () => {
               zakupie 2xBurgerów XL, frytki dostaniesz za 5 zł. Promocja
               obowiązuje do godziny 12:00.
             </p>
+            <div className="swiper-button-wrapper">
+              <button type="button">Zamów online</button>
+            </div>
           </article>
-          <div className="swiper-button-wrapper">
-            <button type="button">Zamów online</button>
-          </div>
         </SwiperSlide>
       </Swiper>
     </>
