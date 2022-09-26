@@ -90,10 +90,10 @@
   padding: 0 0.75rem 0 0;
   @include flexItemCenter();
   @media only screen and (min-width: 957px) and (max-width: 1680px) {
-    padding-right: 2.25rem;
+    padding-right: 3rem;
   }
   @media only screen and (min-width: 1681px) {
-    margin-right: 8.625rem;
+    margin-right: 8.2rem;
   }
 }
 

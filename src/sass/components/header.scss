@@ -2,13 +2,13 @@
 @import "../abstracts/mixins";
 
 .logo {
-  margin: 0 0 0 0.625rem;
+  margin-left: 0.75rem;
   padding: 0.625rem 0.625rem 0.625rem 0;
   @media only screen and (min-width: 957px) and (max-width: 1680px) {
     padding-left: 2.25rem;
   }
   @media only screen and (min-width: 1681px) {
-    margin-left: 8.625rem;
+    margin-left: 9.25rem;
   }
 }
 
