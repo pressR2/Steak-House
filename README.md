@@ -17,4 +17,4 @@ The main goal of the project was to build a fully responsive web application usi
 * [sass](https://sass-lang.com/)
 * [swiper](https://swiperjs.com/)
 
-#Icons close.svg and menu.svg were taken from hhttps://freeicons.io/.
+#Icons close.svg and menu.svg were taken from https://freeicons.io/.
